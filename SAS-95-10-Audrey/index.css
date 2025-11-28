@@ -1,0 +1,166 @@
+/* font */
+@font-face {
+    font-family: "poppins";
+    src: url("Poppins-Bold.ttf");}
+
+@font-face {
+    font-family: "melon";
+    src: url("Melon\ Fruit.otf");}
+
+/* body home */
+body{
+    background-image: url(meeting.png);
+    background-size: cover;
+    position: relative;
+}
+
+h1.atas{
+    text-align: center;
+    font-family: "poppins";
+    color: honeydew;
+    text-shadow: 1px 1px 1px cornflowerblue;
+}
+
+h2.bawah{
+    text-align: center;
+    font-family: "poppins";
+    color: honeydew;
+    text-shadow: 1px 1px 1px cornflowerblue;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    font-family: "poppins";
+    background-color: #326ba8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 50px;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    color: #24bcc1;
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .Dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #69a2df;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .Dropdown {
+    display: block;
+}
+
+.Dropdown li {
+    margin: 5px 0;
+}
+
+.Dropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Dropdown li a:hover {
+    color: #24bcc1;
+    text-decoration: underline;
+    background-color: whitesmoke;
+}
+
+/* content */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: 20px;
+}
+
+.column {
+    background: #7cabde;
+    padding: 25px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 10px 9px 10px rgba(0, 0, 0, 0.1);
+    max-width: 2000px;
+    height: auto;
+}
+
+.column h1, .column h2, .column h3 {
+    color: #e3edff;
+}
+
+.column p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.column.side {
+    flex: 1;
+    background: #7cabde;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column.side h2 {
+    color: #e3edff;
+}
+
+.column.side img {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.column.middle {
+    flex: 3;
+    background: #7cabde;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+.column.middle h2 {
+    color: #e3edff;
+    font-family: "poppins";
+}
